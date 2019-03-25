@@ -1,7 +1,6 @@
 package com.guoxi.springmvc.handlers;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -57,4 +56,11 @@ public class SpringmvcTest {
 		System.out.println("testPathVariable:"+id);
 		return SUCCESS;
 	}
+	/**
+	 * rest风格的url
+	 * 资源表现层转化
+	 * 操作方式 post delete put get   
+	 * 对应对数据库的增删改查
+	 */
+	
 }
