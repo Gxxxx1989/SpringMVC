@@ -1,0 +1,12 @@
+package com.guoxi.springmvc.handlers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class SpringmvcTest {
+	private static final String SUCCESS="success";
+	public String testRequestMapping(){
+		System.out.println();
+		return SUCCESS;
+	}
+}

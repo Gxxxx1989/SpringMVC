@@ -1,0 +1,7 @@
+package com.guoxi.springmvc.handlers;
+
+public class SpringMvcHelloWord {
+	public String hello(){
+		return "success";
+	}
+}

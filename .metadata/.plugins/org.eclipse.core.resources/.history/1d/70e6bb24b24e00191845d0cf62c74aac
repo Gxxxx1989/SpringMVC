@@ -1,0 +1,13 @@
+package com.guoxi.springmvc.handlers;
+
+import javax.xml.ws.RequestWrapper;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class SpringMvcHelloWord {
+	@RequestWrapper("/")
+	public String hello(){
+		return "success";
+	}
+}

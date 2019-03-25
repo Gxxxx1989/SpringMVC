@@ -1,0 +1,16 @@
+package com.guoxi.springmvc.handlers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SpringMvcHelloWord {
+	/**
+	 * 使用@RequestMapping 注解映射请求url
+	 * @return
+	 */
+	@RequestMapping("/")
+	public String hello(){
+		return "success";
+	}
+}
