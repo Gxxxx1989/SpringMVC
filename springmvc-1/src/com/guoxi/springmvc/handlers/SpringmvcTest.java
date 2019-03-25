@@ -2,6 +2,7 @@ package com.guoxi.springmvc.handlers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -36,5 +37,24 @@ public class SpringmvcTest {
 		System.out.println("testParamsAndHeads");
 		return SUCCESS;
 	}
-	
+	/**
+	 *  支持ant风格的通配符
+	 *  ？标识一个字符
+	 *  *标识任意个字符
+	 *  **表示多层匹配路径
+	 */
+	@RequestMapping("/testAntPath/*/abc")
+	public String  testAntPath() {
+		System.out.println("testAntPath");
+		return SUCCESS;
+	}
+	/**
+	 * @PathVariable 映射URL绑定占位符
+	 * @PathVariable 注解可以映射url中的占位符到目标方法的参数中
+	 */
+	@RequestMapping("/testPathVariable/{id}")
+	public String  testPathVariable(@PathVariable("id") Integer id) {
+		System.out.println("testPathVariable:"+id);
+		return SUCCESS;
+	}
 }

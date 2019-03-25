@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+	<a href="springmvc/testPathVariable/1">testPathVariable</a>
+	<br><br>
+	<a href="springmvc/testAntPath/asdasd/abc">testAntPath</a>
+	<br><br>
 	<a href="springmvc/testParamsAndHeads?username=gx&&age=11">testParamsAndHeads</a>
 	<br><br>
 	<form action="springmvc/testMethod" method="post">
